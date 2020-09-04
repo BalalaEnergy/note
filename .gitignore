@@ -1,3 +1,4 @@
 /Code/.idea/
 *.iml
 /Code/out/
+.DS_Store
