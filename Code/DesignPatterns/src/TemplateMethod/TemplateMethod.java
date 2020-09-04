@@ -9,19 +9,19 @@ public class TemplateMethod {
 
 abstract class Application {
     // 稳定的部分，在主流程中实现
-    /*final*/ void step1() {
+    protected /*final*/ void step1() {
         System.out.println("step1 run");
     }
 
-    void step2() {
+    protected void step2() {
         System.out.println("step2 run");
     }
 
     // 需要变化的部分，交给子类来实现
-    abstract void step3();
-    abstract void step4();
+    protected abstract void step3();
+    protected abstract void step4();
 
-    void end() {
+    protected void end() {
         System.out.println("Application End");
     }
 
@@ -38,17 +38,17 @@ abstract class Application {
 class Library extends Application {
 
     @Override
-    void step3() {
+    protected void step3() {
         System.out.println("step3 run");
     }
 
     @Override
-    void step4() {
+    protected void step4() {
         System.out.println("step4 run");
     }
 
     @Override
-    void end() {
+    protected void end() {
         System.out.println("Library End");
     }
 }
