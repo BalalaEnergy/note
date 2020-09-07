@@ -1,4 +1,4 @@
-package Strategy;
+package StrategyPattern;
 
 public class GeneralWrite {
     public static void main(String[] args) {

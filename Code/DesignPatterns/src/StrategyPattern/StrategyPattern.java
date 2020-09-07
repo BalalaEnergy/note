@@ -1,6 +1,6 @@
-package Strategy;
+package StrategyPattern;
 
-public class Strategy {
+public class StrategyPattern {
     public static void main(String[] args) {
         SalesOrder2 salesOrder = new SalesOrder2(TaxStrategyFactory.newTaxStrategy());
         salesOrder.calculateTax();

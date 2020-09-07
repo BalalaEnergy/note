@@ -1,6 +1,6 @@
-package TemplateMethod;
+package TemplateMethodPattern;
 
-public class TemplateMethod {
+public class TemplateMethodPattern {
     public static void main(String[] args) {
         Application application = new Library();
         application.start();
